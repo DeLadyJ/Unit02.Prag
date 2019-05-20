@@ -65,10 +65,10 @@ const begin = (pageView * 10) - 10;
 const end = (pageView * 10);
 namesList.style.display = 'none';
 for (let i = 0; i < namesList.length; i++) { 
-   if (i <= begin && i <= end){
+   if (i <= begin && i <= end)
       namesList.style.display = "";
-   } else {
-   //namesList.style.display = 'none';
+   else 
+   namesList.style.display = 'none';
    return(namesList);
 }
 }
