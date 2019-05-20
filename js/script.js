@@ -22,12 +22,21 @@ FSJS project 2 - List Filter and Pagination
  * - 2 stores the number of units viewed on each page
  * 
 */
-const namesList = document.querySelectorAll('student-item');
+const namesList = document.querySelectorAll('.student-item');
 const pageView = 10;
 
 //displays the list in the console
-console.log = (namesLst);
+//console.log = (namesList);
 
+//calcale number of pages
+//
+//additional variables
+//let currentPage = 1;
+//let numberOfPages = 1;
+
+//function getNumberOfPages() {
+ //  return Math.ceil(list.length / pageView);
+//}
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -45,54 +54,132 @@ console.log = (namesLst);
 ***/
 //let list =();
 
-
 /***
  * Create showPage function
  * - hides the list
  * - displays only target names on any given page
+ *   calcalate number of pages
  */
-let showPage = (namesList, pageView);
-let begin = (pageView * 10) - 10;  
-let last = (pageView * 10);
-For (let i = 0; i < namesList.length; i++);
-namesList[i].style.display = 'none';
-   if (begin <=  i && i < last);{
-      namesList{i}.style.display = '';
+const showPage = (namesList, pageView) => {
+const begin = (pageView * 10) - 10;  
+const end = (pageView * 10);
+namesList.style.display = 'none';
+for (let i = 0; i < namesList.length; i++) { 
+   if (i <= begin && i <= end){
+      namesList.style.display = "";
+   } else {
+   namesList.style.display = 'none';
+   return(namesList);
+}
+}
+
+function showPage(){
+   totalPages = getTotalPages();
+   function getTotalPages(){
+      return Math.ceil(namesList.length / pageView)
    }
-   {
-      namesListli.style.display = ('node');
-      }
-      return ;
+   let begin = ((currentPage - 1)*pageView);
+   let end = begin + numberPerPage;
+   pageList = namesList.slice(begin, end); //creates list by page
+   getList(); // gets list
+   scan (); // determines the status of the pagination buttons
+   function getList(){document.getElementById("namesList").innerHTML = "";
+   for (r = 0;
+      r< pageView.length; r++) {
+         document.getElementById("namesList").innerHTML += pageView[r] + "";
+   }}
+   }
+
+//console.log(namesList);
+/***
+ * function showpage() {
+ * totalPages = getTotalPages();
+ * 
+ * function getTotalPages() {
+ * return Math.ceil(list.length / pageView);
+ * }
+ * //
+    let begin = ((currentPage - 1) * pageView);
+    let end = begin + numberPerPage;
+
+    pageList = list.slice(begin, end); // creates list by page
+    getList();    // get the list
+    scan();         // determines the status of the pagination buttons
+
+   function getList() {
+    document.getElementById("list").innerHTML = "";
+    
+    for (r = 0; r < pageView.length; r++) {
+        document.getElementById("list").innerHTML += pageView[r] + "";
+
+
+    }
+} 
+
+   }
+ */
 
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
+const appendPageLinks = (namesList) => {
+  let pages = math.ceil(namesList.length / 10); 
+  let div = document.createElement ('div');
+  div.className = 'pagination';
+  div.appendChild(pages); {
+  let ul = document.getElementById ('namesList');
+  let li = document.createElement ('li'); 
+   
+   for (i = 0; i <= pages; i++)  {
+        li.appendChildId(document.createTextNode(name));
+        ul.appendChild(li); 
+   }
+   }
+}
+function showPage(){
+   totalPages = getTotalPages();
+function getTotalPages(){
+   return Math.ceil(namesList.length / pageView)
+}
+let begin = ((currentPage - 1)*pageView);
+let end = begin + numberPerPage;
 
-let appendPageLinks = namesList; => {
-let li = document.createElement ('li');
-let a = document.createElement ('a');
-let pages = math.ceil(stendents.length / 10);
-pageView.className = ('pagination');
-mainDiv.appendChild(div);
-div.appendChild(ul);
-
-for (i = 0; i<= pages; i++)  {
-   ul.appendChild(li);
-   li.appendChild(a);
+pageList = namesList.slice(begin, end); //creates list by page
+getList();
+scan ();
+function getList(){document.getElementById("namesList").innerHTML = "";
+for (r = 0;r< pageView.length; r++) {document.getElementById("namesList").innerHTML += pageView[r] + "";
+}}
 }
 
+//mainDiv.appendChild('div');
+//div.appendChild('ul');
+
+
+//showPage(namesList);
+
+
+ // var theDiv = document.getElementById ('div');
+ // theDiv.innerHTML += "namesList";
+ // $(showPage) ;
+ // $(ul.links > 'li').click (showPage());
+
+  //$("ul.links > li").hide();
+  //$(this).hide();
+ 
+
+ 
 /***
- * var theDiv = document.getElementById ();
- * theDiv.innerHTML += "namesList";
- * $( showPage) {
- * 'ul.links > li').click (showPage()}
- * $('ul.links > li").hide();
- * $(this).hide();
- * });
- * });
+ * var object = document.createElement('div');
+  object.id = "myDiv";
+  object.style.width = "100px"; "100px"
+  object.style.height = "100px"; "100px"
+  object.style.background = "blue"; "blue"
+  object.style.text= "Search";
+  document.getElementById('div').appendChild();
+ * 
  */
 
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
+ 
+console.log(showPage);
