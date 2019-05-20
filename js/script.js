@@ -71,7 +71,23 @@ for (let i = 0; i < namesList.length; i++) {
    namesList.style.display = 'none';
    return(namesList);
 }
-}
+
+pageList = list.slice(begin, end); // creates list by page
+    getList();    // get the list
+    scan();         // determines the status of the pagination buttons
+
+   function getList() {
+    document.getElementById("list").innerHTML = "";
+    
+    for (r = 0; r < pageView.length; r++) {
+        document.getElementById("list").innerHTML += pageView[r] + "";
+
+
+    }
+} 
+
+   }
+
 
 /**
  * function showPage(){
@@ -136,7 +152,7 @@ const appendPageLinks = (namesList) => {
   let li = document.createElement ('li'); 
    
    for (i = 0; i <= pages; i++)  {
-        li.appendChildId(document.createTextNode(name));
+        li.appendChildId(document.createTextNode(namesList));
         ul.appendChild(li); 
    }
    }
@@ -190,4 +206,4 @@ for (r = 0;r< pageView.length; r++) {document.getElementById("namesList").innerH
  */
 
  
-console.log(namesList);
+console.log(showPage);
