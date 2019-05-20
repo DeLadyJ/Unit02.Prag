@@ -68,12 +68,13 @@ for (let i = 0; i < namesList.length; i++) {
    if (i <= begin && i <= end){
       namesList.style.display = "";
    } else {
-   namesList.style.display = 'none';
+   //namesList.style.display = 'none';
    return(namesList);
 }
 }
 
-function showPage(){
+/**
+ * function showPage(){
    totalPages = getTotalPages();
    function getTotalPages(){
       return Math.ceil(namesList.length / pageView)
@@ -89,6 +90,8 @@ function showPage(){
          document.getElementById("namesList").innerHTML += pageView[r] + "";
    }}
    }
+
+ */
 
 //console.log(namesList);
 /***
@@ -123,21 +126,23 @@ function showPage(){
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
-const appendPageLinks = (namesList) => {
-  let pages = math.ceil(namesList.length / 10); 
-  let div = document.createElement ('div');
-  div.className = 'pagination';
-  div.appendChild(pages); {
-  let ul = document.getElementById ('namesList');
-  let li = document.createElement ('li'); 
+//const appendPageLinks = (namesList) => {
+//  let pages = math.ceil(namesList.length / 10); 
+//  let div = document.createElement ('div');
+//  div.className = 'pagination';
+//  div.appendChild(pages); {
+//  let ul = document.getElementById ('namesList');
+//  let li = document.createElement ('li'); 
    
-   for (i = 0; i <= pages; i++)  {
-        li.appendChildId(document.createTextNode(name));
-        ul.appendChild(li); 
-   }
-   }
-}
-function showPage(){
+//   for (i = 0; i <= pages; i++)  {
+//        li.appendChildId(document.createTextNode(name));
+//        ul.appendChild(li); 
+ //  }
+ //  }
+//}
+
+/**
+ * unction showPage(){
    totalPages = getTotalPages();
 function getTotalPages(){
    return Math.ceil(namesList.length / pageView)
@@ -152,6 +157,8 @@ function getList(){document.getElementById("namesList").innerHTML = "";
 for (r = 0;r< pageView.length; r++) {document.getElementById("namesList").innerHTML += pageView[r] + "";
 }}
 }
+ * 
+ */
 
 //mainDiv.appendChild('div');
 //div.appendChild('ul');
@@ -182,4 +189,4 @@ for (r = 0;r< pageView.length; r++) {document.getElementById("namesList").innerH
  */
 
  
-console.log(showPage);
+console.log(namesList);
