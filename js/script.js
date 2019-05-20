@@ -126,20 +126,21 @@ for (let i = 0; i < namesList.length; i++) {
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
-//const appendPageLinks = (namesList) => {
-//  let pages = math.ceil(namesList.length / 10); 
-//  let div = document.createElement ('div');
-//  div.className = 'pagination';
-//  div.appendChild(pages); {
-//  let ul = document.getElementById ('namesList');
-//  let li = document.createElement ('li'); 
+
+const appendPageLinks = (namesList) => {
+  let pages = math.ceil(namesList.length / 10); 
+  let div = document.createElement ('div');
+  div.className = 'pagination';
+  div.appendChild(pages); {
+  let ul = document.getElementById ('namesList');
+  let li = document.createElement ('li'); 
    
-//   for (i = 0; i <= pages; i++)  {
-//        li.appendChildId(document.createTextNode(name));
-//        ul.appendChild(li); 
- //  }
- //  }
-//}
+   for (i = 0; i <= pages; i++)  {
+        li.appendChildId(document.createTextNode(name));
+        ul.appendChild(li); 
+   }
+   }
+}
 
 /**
  * unction showPage(){
