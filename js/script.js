@@ -25,18 +25,7 @@ FSJS project 2 - List Filter and Pagination
 const namesList = document.querySelectorAll('.student-item');
 const pageView = 10;
 
-//displays the list in the console
-//console.log = (namesList);
-
-//calcale number of pages
-//
-//additional variables
-//let currentPage = 1;
-//let numberOfPages = 1;
-
-//function getNumberOfPages() {
- //  return Math.ceil(list.length / pageView);
-//}
+console.log(showPage);
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -89,121 +78,12 @@ pageList = list.slice(begin, end); // creates list by page
    }
 
 
-/**
- * function showPage(){
-   totalPages = getTotalPages();
-   function getTotalPages(){
-      return Math.ceil(namesList.length / pageView)
-   }
-   let begin = ((currentPage - 1)*pageView);
-   let end = begin + numberPerPage;
-   pageList = namesList.slice(begin, end); //creates list by page
-   getList(); // gets list
-   scan (); // determines the status of the pagination buttons
-   function getList(){document.getElementById("namesList").innerHTML = "";
-   for (r = 0;
-      r< pageView.length; r++) {
-         document.getElementById("namesList").innerHTML += pageView[r] + "";
-   }}
-   }
-
- */
-
-//console.log(namesList);
-/***
- * function showpage() {
- * totalPages = getTotalPages();
- * 
- * function getTotalPages() {
- * return Math.ceil(list.length / pageView);
- * }
- * //
-    let begin = ((currentPage - 1) * pageView);
-    let end = begin + numberPerPage;
-
-    pageList = list.slice(begin, end); // creates list by page
-    getList();    // get the list
-    scan();         // determines the status of the pagination buttons
-
-   function getList() {
-    document.getElementById("list").innerHTML = "";
-    
-    for (r = 0; r < pageView.length; r++) {
-        document.getElementById("list").innerHTML += pageView[r] + "";
-
-
-    }
-} 
-
-   }
- */
 
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
 
-const appendPageLinks = (namesList) => {
-  let pages = math.ceil(namesList.length / 10); 
-  let div = document.createElement ('div');
-  div.className = 'pagination';
-  div.appendChild(pages); {
-  let ul = document.getElementById ('namesList');
-  let li = document.createElement ('li'); 
-   
-   for (i = 0; i <= pages; i++)  {
-        li.appendChildId(document.createTextNode(namesList));
-        ul.appendChild(li); 
-   }
-   }
-}
-
-/**
- * unction showPage(){
-   totalPages = getTotalPages();
-function getTotalPages(){
-   return Math.ceil(namesList.length / pageView)
-}
-let begin = ((currentPage - 1)*pageView);
-let end = begin + numberPerPage;
-
-pageList = namesList.slice(begin, end); //creates list by page
-getList();
-scan ();
-function getList(){document.getElementById("namesList").innerHTML = "";
-for (r = 0;r< pageView.length; r++) {document.getElementById("namesList").innerHTML += pageView[r] + "";
-}}
-}
- * 
- */
-
-//mainDiv.appendChild('div');
-//div.appendChild('ul');
-
-
-//showPage(namesList);
-
-
- // var theDiv = document.getElementById ('div');
- // theDiv.innerHTML += "namesList";
- // $(showPage) ;
- // $(ul.links > 'li').click (showPage());
-
-  //$("ul.links > li").hide();
-  //$(this).hide();
- 
 
  
-/***
- * var object = document.createElement('div');
-  object.id = "myDiv";
-  object.style.width = "100px"; "100px"
-  object.style.height = "100px"; "100px"
-  object.style.background = "blue"; "blue"
-  object.style.text= "Search";
-  document.getElementById('div').appendChild();
- * 
- */
 
- 
-console.log(showPage);
