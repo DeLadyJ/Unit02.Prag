@@ -25,8 +25,30 @@ FSJS project 2 - List Filter and Pagination
 const namesList = document.querySelectorAll('.student-item');
 const pageView = 10;
 
-console.log(showPage);
+//console.log(namesList);
 
+/***
+ * Create showPage function
+ * - hides the list
+ * - displays only target names on any given page
+ *   calculates number of pages
+ */
+
+ 
+const showPage = (list, page) => {
+   const begin = (page * 10) - 10;  
+   const end = (page * 10);
+
+   for (let i = 0; i < list.length; i++) { 
+      if (i <= begin && i >= end)
+         list.style.display = "";
+       else 
+      list.style.display = 'none';
+      return(list);
+   }
+   console.log(showPage);
+}
+;
 /*** 
    Create the `showPage` function to hide all of the items in the 
    list except for the ten you want to show.
@@ -41,41 +63,54 @@ console.log(showPage);
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
-//let list =();
+const appendPageLinks = (appendPage) => {
+   let pages = math.ceil(namesList.length / 10); 
+   let div = document.createElement ('div');
+   div.className = 'pagination';
+   div.appendChild(pages); {
+   let ul = document.getElementById ('ul');
+   let li = document.createElement ('li'); 
+    
+    for (i = 0; i <= pages; i++)  {
+         li.appendChildId(document.createTextNode('a'));
+         ul.appendChild(li); 
+    }
+    }
+ }
 
-/***
- * Create showPage function
- * - hides the list
- * - displays only target names on any given page
- *   calcalate number of pages
- */
-const showPage = (namesList, pageView) => {
-const begin = (pageView * 10) - 10;  
-const end = (pageView * 10);
-namesList.style.display = 'none';
-for (let i = 0; i < namesList.length; i++) { 
-   if (i <= begin && i <= end)
-      namesList.style.display = "";
-   else 
-   namesList.style.display = 'none';
-   return(namesList);
+{
+ var ulist = document.getElementById ('ul');
+ var list = document.createElement ('li');
+ var anchor = document.createElement ('a');
+ anchor.setAttribute ('href', '#');
+ anchor.innerHTML = i;
+ list.appendChild('anchor');
+ ulist.appendChild (list);
 }
 
-pageList = list.slice(begin, end); // creates list by page
-    getList();    // get the list
-    scan();         // determines the status of the pagination buttons
+//<div class="pagination">
+  //      <ul>
+  //      <li>
+  //          <a class="active" href="#">1</a>
+  //        </li>
+  //         <li>
+  //          <a href="#">2</a>
+  //        </li>
+  //         <li>
+  //          <a href="#">3</a>
+  //        </li>
+  //         <li>
+  //          <a href="#">4</a>
+  //        </li>
+  //         <li>
+  //          <a href="#">5</a>
+  //        </li>
+  //      </ul>
+  //    </div>
 
-   function getList() {
-    document.getElementById("list").innerHTML = "";
-    
-    for (r = 0; r < pageView.length; r++) {
-        document.getElementById("list").innerHTML += pageView[r] + "";
 
 
-    }
-} 
 
-   }
 
 
 
