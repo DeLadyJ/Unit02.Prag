@@ -15,7 +15,7 @@ FSJS project 2 - List Filter and Pagination
    going to create. A good general rule of thumb is if the variable 
    will only be used inside of a function, then it can be locally 
    scoped to that function.
-***/
+***/ 
 /*** 
  * Create 2 global variables 
  * - 1 stores the list elements
@@ -88,25 +88,6 @@ const appendPageLinks = (appendPage) => {
  ulist.appendChild (list);
 }
 
-//<div class="pagination">
-  //      <ul>
-  //      <li>
-  //          <a class="active" href="#">1</a>
-  //        </li>
-  //         <li>
-  //          <a href="#">2</a>
-  //        </li>
-  //         <li>
-  //          <a href="#">3</a>
-  //        </li>
-  //         <li>
-  //          <a href="#">4</a>
-  //        </li>
-  //         <li>
-  //          <a href="#">5</a>
-  //        </li>
-  //      </ul>
-  //    </div>
 
 
 
