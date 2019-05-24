@@ -74,7 +74,7 @@ const showPage = (list, page);  {
  * Create appendPageLinks functios
  * - this makes the buttons work with pagination
 */
-const appendPageLinks = (list) => {
+const appendPageLinks = (list); {
    let pages = math.ceil(namesList.length / pageView); 
    let containor = document.createElement ('.page');
    let div = document.getElementById ('div');
@@ -85,7 +85,7 @@ const appendPageLinks = (list) => {
     
     for (i = 0; i <= pages; i++) {
         let li = document.createElement ('li'); 
-        let a = ocument.createTextNode('a'));
+        let a = ocument.createTextNode('a');
 
          ul.appendChild(li); 
     }
