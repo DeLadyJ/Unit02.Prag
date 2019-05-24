@@ -50,21 +50,20 @@ console.log(namesList);
  */
 
  
-const showPage = (list, page);  {
+const showPage = (list, page) =>  {
    let begin = (page * pageView) - pageView;  
    const end = page * pageView;
    for (let i = 0; i < list.length; i++) { 
-      if (i <= begin && i >= end){
+      if (i => begin && i <= end){
          list[i].style.display = 'block';
        } else {
       list[i].style.display = 'none';
    
     }
-   showPage(namesList, 1);
   }
 }
 
-
+showPage(namesList, 1);
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
