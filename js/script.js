@@ -73,23 +73,24 @@ showPage(namesList, 1);
  * Create appendPageLinks functios
  * - this makes the buttons work with pagination
 */
-const appendPageLinks = (list); {
-   let pages = math.ceil(namesList.length / pageView); 
-   let containor = document.createElement ('.page');
-   let div = document.getElementById ('div');
-   div.className = 'pagination';
-   div.appendChild(pages); 
+const appendPageLinks => (list) ;{
+   let amtOfSheets = list.length/ amtOfSheets;
+   let amtOfSheets = math.ceil( pageView); 
+    containor = document.querySelectorAll ('.page');
+    links.className = 'paginate';
+    paginateDiv = document.createElement('div');
+   div.appendChild(links); 
    let ul = document.getElementById ('ul');
-   let li = document.createElement ('li'); 
+    li = document.createElement ('li'); 
     
     for (i = 0; i <= pages; i++) {
         let li = document.createElement ('li'); 
-        let a = ocument.createTextNode('a');
+        let a = ocument.createElement('a');
 
          ul.appendChild(li); 
     }
    }    
- 
+ console.log(list);
 // For (let index = buttons.length - 1; index > 1; ==index) {
  //Let button = buttons{index};
  //Button.addElementListener(‘click’, pagination.click);
