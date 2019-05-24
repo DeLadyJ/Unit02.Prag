@@ -45,7 +45,7 @@ console.log(namesList);
 /***
  * Create showPage function
  * - hides the list
- * - displays only target names on any given page
+ * - displays only target pages
  *   calculates number of pages
  */
 
@@ -70,7 +70,10 @@ const showPage  (list, page) => {
    functionality to the pagination buttons.
 ***/
 
-
+/** 
+ * Create appendPageLinks functios
+ * - this makes the buttons work with pagination
+*/
 const appendPageLinks = (list) => {
    let pages = math.ceil(namesList.length / pageView); 
    let containor = document.createElement ('.page');
