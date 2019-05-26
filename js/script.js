@@ -70,15 +70,14 @@ function appendPageLinks (list) {
 
          if (i===0) {
             a.classList = 'active';
-         }
-/**
+/**}
      *Adds the event listener 
      */
          a.addEventListener('click', event => {
           numOfPages = event.target.innerText;
          if ((event.target.className = 'a'));{
            let pageNumber = document.querySelectorAll('a'); 
-
+         }
 /**
 * Removes the active page from the pagination link
 */
@@ -91,14 +90,13 @@ pageNumber[i].classList.remove('active');
 */
 a.className = event.target.textContext;
 event.target.classList.add('active');    
+         
 
-
- }
- 
-});
-      }
+}
+         );
+        }
     
   }
   appendPageLinks(namesList);
-   showPage(namesList, 1);
+  showPage(namesList, 1);
    
