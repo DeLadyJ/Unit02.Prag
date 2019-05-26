@@ -71,32 +71,33 @@ function appendPageLinks (list) {
          if (i===0) {
             a.classList = 'active';
          }
-      }
-    /**
+/**
      *Adds the event listener 
      */
          a.addEventListener('click', event => {
-             numOfPages = event.target.innerText;
-            if ((event.target.className = 'a'));{
-              let pageNumber = document.querySelectorAll('a'); 
+          numOfPages = event.target.innerText;
+         if ((event.target.className = 'a'));{
+           let pageNumber = document.querySelectorAll('a'); 
 
 /**
- * Removes the active page from the pagination link
- */
+* Removes the active page from the pagination link
+*/
 for (let i = 0; i< pageNumber.length; i += 1) {
-   pageNumber[i].classList.remove('active');
+pageNumber[i].classList.remove('active');
 } 
 
 /**
- * Adds the active page to the pagination link once the event listener is actived
- */
-   a.className = event.target.textContext;
-   event.target.classList.add('active');    
+* Adds the active page to the pagination link once the event listener is actived
+*/
+a.className = event.target.textContext;
+event.target.classList.add('active');    
 
 
-    }
+ }
+ 
+});
+      }
     
-   });
   }
   appendPageLinks(namesList);
    showPage(namesList, 1);
