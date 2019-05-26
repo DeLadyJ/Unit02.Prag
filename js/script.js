@@ -97,5 +97,6 @@ for (let i = 0; i< pageNumber.length; i += 1) {
     }
     
    });
+  }
    showPage(namesList, 1);
    
