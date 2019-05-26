@@ -31,7 +31,7 @@ console.log(namesList);
 const showPage = (list, page) =>  {
    let begin = (page * pageView) - pageView;  
    const end = page * pageView;
-   for (let i >= 0; i < list.length; i++) { 
+   for (let i = 0; i < list.length; i++) { 
       if (i >= begin && i < end) {
          list[i].style.display = "";
        } else {
