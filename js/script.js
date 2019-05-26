@@ -74,7 +74,7 @@ function appendPageLinks (list) {
      *Adds the event listener 
      */
          a.addEventListener('click', event => {
-          numOfPages = event.target.innerText;
+          activePageNum = event.target.innerText;
          if ((event.target.className = 'a'));{
            let pageNumber = document.querySelectorAll('a'); 
          }
@@ -90,7 +90,8 @@ pageNumber[i].classList.remove('active');
 */
 a.className = event.target.textContext;
 event.target.classList.add('active');    
-         
+ 
+showPage(namesList, activePageNum);
 
 }
          );
