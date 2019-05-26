@@ -62,7 +62,7 @@ function appendPageLinks (list) {
     
     for (i = 0; i <= numOfPages; i++) {
         let li = document.createElement ("li"); 
-        let a = ocument.createElement("a");
+        let a = document.createElement("a");
         a.href = "#";
         a.textContent = i + 1;
         li.appendChild(a);
@@ -98,5 +98,6 @@ for (let i = 0; i< pageNumber.length; i += 1) {
     
    });
   }
+  appendPageLinks(namesList);
    showPage(namesList, 1);
    
