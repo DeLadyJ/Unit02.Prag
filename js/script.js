@@ -51,10 +51,10 @@ function appendPageLinks (list) {
     numOfPages = Math.ceil(list.length/ pageView);
     let paginateDiv = document.createElement("div");
     pagediv.appendChild(paginateDiv);
-     paginateDiv.className = "paginate";
+     paginateDiv.className = "pagination";
     let paginateUl = document.createElement("ul");
      paginateDiv.appendChild(paginateUl);
-   
+}
    /**
     * Creates the elements li and a
     * adds the href to the page
