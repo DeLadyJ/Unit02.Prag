@@ -16,7 +16,7 @@ const namesList = document.querySelectorAll('.student-item');
 const pageView = 10;
 let pagediv = document.querySelector('.page');
 
-console.log(namesList);
+//console.log(namesList);
 
 
 
