@@ -60,7 +60,7 @@ function appendPageLinks (list) {
     * adds the href to the page
     */
     
-    for (i = 0; i <= numOfPages; i++) {
+    for (i = 0; i < numOfPages; i++) {
         let li = document.createElement ("li"); 
         let a = document.createElement("a");
         a.href = "#";
