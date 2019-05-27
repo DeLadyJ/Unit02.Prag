@@ -70,6 +70,10 @@ function appendPageLinks (list) {
 
          if (i===0) {
             a.classList = 'active';
+         }
+
+        
+      
 /**}
      *Adds the event listener 
      */
@@ -100,9 +104,9 @@ event.target.classList.add('active');
 });
          
         }
-    
-  }
-}
+      } 
+  
+
   appendPageLinks(namesList);
   showPage(namesList, 1);
    
