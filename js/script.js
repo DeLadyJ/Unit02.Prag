@@ -29,7 +29,7 @@ console.log(namesList);
 
  
 const showPage = (list, page) =>  {
-   let begin = (page * pageView) - pageView;  
+   const begin = page * pageView - pageView;  
    const end = page * pageView;
    for (let i = 0; i < list.length; i++) { 
       if (i >= begin && i < end) {
