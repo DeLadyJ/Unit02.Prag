@@ -54,13 +54,13 @@ function appendPageLinks (list) {
      paginateDiv.className = "pagination";
     let paginateUl = document.createElement("ul");
      paginateDiv.appendChild(paginateUl);
-}
+
    /**
     * Creates the elements li and a
     * adds the href to the page
     */
     
-    for (i = 1; i < numOfPages; i++) {
+    for (i = 0; i < numOfPages; i++) {
         let li = document.createElement ("li"); 
         let a = document.createElement("a");
         a.href = "#";
@@ -99,6 +99,7 @@ showPage(namesList, activePageNum);
         }
     
   }
+}
   appendPageLinks(namesList);
   showPage(namesList, 1);
    
