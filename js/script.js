@@ -78,14 +78,14 @@ function appendPageLinks (list) {
 
 showPage(activePageNum, namesList);
 
-         if ((event.target.className = 'a'));
+         if ((event.target.className = 'A'));
             pageNumber = document.querySelectorAll('a'); 
          
          
 /**
 * Removes the active page from the pagination link
 */
-for (let i = 0; i< pageNumber.length; i += 1) {
+for (let i = 0; i< pageNumber.length; i += i) {
 pageNumber[i].classList.remove('active');
 } 
 
