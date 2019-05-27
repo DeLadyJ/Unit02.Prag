@@ -97,8 +97,8 @@ event.target.classList.add('active');
  
 //showPage(namesList, activePageNum);
 
-}
-         );
+});
+         
         }
     
   }
