@@ -85,7 +85,7 @@ showPage(activePageNum, namesList);
 /**
 * Removes the active page from the pagination link
 */
-for (let i = 0; i< pageNumber.length; i += i) {
+for (let i = 0; i< pageNumber.length; i += 1) {
 pageNumber[i].classList.remove('active');
 } 
 
@@ -95,7 +95,7 @@ pageNumber[i].classList.remove('active');
 a.className = event.target.textContext;
 event.target.classList.add('active');    
  
-showPage(namesList, activePageNum);
+//showPage(namesList, activePageNum);
 
 }
          );
