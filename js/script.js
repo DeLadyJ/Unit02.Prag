@@ -60,7 +60,7 @@ function appendPageLinks (list) {
     * adds the href to the page
     */
     
-    for (i = 0; i < numOfPages; i++) {
+    for (i = 1; i < numOfPages; i++) {
         let li = document.createElement ("li"); 
         let a = document.createElement("a");
         a.href = "#";
@@ -76,9 +76,9 @@ function appendPageLinks (list) {
          a.addEventListener('click', event => {
           activePageNum = event.target.innerText;
          if ((event.target.className = 'a'));{
-           let pageNumber = document.querySelectorAll('a'); 
+            pageNumber = document.querySelectorAll('a'); 
          }
-         console.log(pageNumber), 1;
+         
 /**
 * Removes the active page from the pagination link
 */
