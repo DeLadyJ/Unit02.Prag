@@ -69,7 +69,7 @@ function appendPageLinks (list) {
         paginateUl.appendChild(li);
 
          if (i===0) {
-            a.classList = 'active';
+            a.className = 'active';
          }
 
         
