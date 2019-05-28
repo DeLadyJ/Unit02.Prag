@@ -82,7 +82,7 @@ function appendPageLinks (list) {
 
 showPage(activePageNum, namesList);
 
-         if ((event.target.className = 'A'));
+         if ((event.target.className = 'A'));{
             pageNumber = document.querySelectorAll('a'); 
          
          
@@ -98,7 +98,7 @@ pageNumber[i].classList.remove('active');
 */
 a.className = event.target.textContext;
 event.target.classList.add('active');    
- 
+}
 //showPage(namesList, activePageNum);
 
 });
